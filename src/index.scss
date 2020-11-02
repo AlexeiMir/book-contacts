@@ -1,0 +1,64 @@
+@import "scss/buuton";
+@import "scss/sort";
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  outline: none;
+  font-family: 'Roboto', -apple-system, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.book{
+  width: 90%;
+  margin: 5% auto;
+  border: 1px solid #f1f1f1;
+  box-shadow:1px 2px 20px #f3f3f3;
+  border-radius: 10px;
+  font-size: 14px;
+  display: flex;
+
+  &__top{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 4%;
+  }
+
+  &__content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+  }
+
+  &__profile {
+    flex: 1;
+    padding: 60px;
+    overflow: auto;
+  }
+
+  &__sidebar{
+    width: 210px;
+
+    border-right: 1px solid #F1F1F1;
+    background-color:#f4f6f8;
+    padding: 60px 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+  }
+}
+.field {
+  background: #ffffff;
+  border: 1px solid #efefef;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 4px 6px;
+
+  font-size: 14px;
+
+  &:focus {
+    border-color: #dbdbdb;
+  }
+}

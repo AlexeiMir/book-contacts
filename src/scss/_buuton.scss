@@ -1,0 +1,63 @@
+@import 'variables';
+.button{
+  display: inline-block;
+  background-color: $blue;
+  border-radius: 10px;
+  padding: 10px 15px;
+  min-width: 100px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color $duration ease-in-out, border-color $duration ease-in-out;
+  border: 1px solid transparent;
+
+  &,
+  span {
+    color: #fff;
+  }
+
+  i,
+  span,
+  path,
+  svg {
+    transition: all $duration ease-in-out;
+  }
+  &:hover {
+    background-color: darken($blue, 8%);
+  }
+
+  &:active {
+    background-color: darken($blue, 12%);
+    transform: translateY(1px);
+  }
+
+  &--hesh{
+    display: flex;
+    align-items: center;
+    padding: 12px 25px;
+    justify-content: space-between;
+
+    &:hover {
+      background-color: #fff;
+      border-color: $blue;
+      span {
+        background-color: #fff;
+        color: $blue;
+      }
+    }
+
+    span{
+      font-weight: 600;
+      font-size: 14px;
+      margin-right: 5px;
+    }
+
+    svg{
+      &:hover{
+        path {
+          fill: $blue;
+        }
+      }
+    }
+
+  }
+}
